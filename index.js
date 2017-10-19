@@ -22,7 +22,7 @@ function setDokumenter (dokumenter) {
 
 exports.sendForsendelse = options => {
   options.action = 'sendForsendelse'
-  options.query._dokumenter = Object.assign([], options.query.dokumenter)
+  options._dokumenter = Object.assign([], options.query.dokumenter)
   options.query.dokumenter = setDokumenter(options.query.dokumenter)
   if (options.query.svarSendesTil) {
     options.query.svarSendesTil = setMottaker(options.query.svarSendesTil)

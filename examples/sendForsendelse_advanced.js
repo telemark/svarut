@@ -66,7 +66,6 @@ const options = {
       svarPaForsendelse: 'http://google.no',
       svarPaForsendelseLink: false,
       svarSendesTil: {
-        type: 'privatPerson',
         navn: 'Terje Tverrtryne',
         adresse1: 'Skogsveien 42',
         adresse2: '',
@@ -78,8 +77,6 @@ const options = {
     },
     mottaker: [
       {
-        type: 'privatPerson',
-        // type: 'organisasjon', // Hvis organisasjon
         navn: 'Terje Tverrtryne',
         adresse1: 'Skogsveien 42',
         adresse2: '',

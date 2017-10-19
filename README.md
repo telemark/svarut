@@ -14,12 +14,12 @@ This module cover all methods in [ForsendelsesServiceV7](https://svarut.ks.no/tj
 From npm
 
 ```sh
-$ npm i svarut
+$ npm i node-svarut
 ```
 
 From GitHub
 ```sh
-$ git clone git@github.com:telemark/svarut.git
+$ git clone git@github.com:telemark/node-svarut.git
 ```
 
 cd into directory and run install
@@ -32,7 +32,7 @@ $ npm i
 
 ### sendForsendelse (simple)
 
-See [sendForsendelse.js](example/sendForsendelse.js)
+See [sendForsendelse.js](examples/sendForsendelse.js)
 
 Returns an array of ids
 
@@ -42,7 +42,7 @@ Returns an array of ids
 
 ### sendForsendelse (advanced)
 
-See [sendForsendelse.js](example/sendForsendelse_advanced.js)
+See [sendForsendelse.js](examples/sendForsendelse_advanced.js)
 
 Returns an array of ids
 
@@ -52,7 +52,7 @@ Returns an array of ids
 
 ### retrieveForsendelseStatus
 
-See [retrieveForsendelseStatus.js](example/retrieveForsendelseStatus.js)
+See [retrieveForsendelseStatus.js](examples/retrieveForsendelseStatus.js)
 
 Returns
 
@@ -72,7 +72,7 @@ Returns
 
 ### retrieveForsendelseStatuser
 
-See [retrieveForsendelseStatuser.js](example/retrieveForsendelseStatuser.js)
+See [retrieveForsendelseStatuser.js](examples/retrieveForsendelseStatuser.js)
 
 Returns
 
@@ -105,7 +105,7 @@ Returns
 
 ### retrieveForsendelseHistorikk
 
-See [retrieveForsendelseHistorikk.js](example/retrieveForsendelseHistorikk.js)
+See [retrieveForsendelseHistorikk.js](examples/retrieveForsendelseHistorikk.js)
 
 Returns
 
@@ -191,12 +191,12 @@ Returns
 
 ### retrieveForsendelseIdByEksternRef
 
-See [retrieveForsendelseIdByEksternRef.js](example/retrieveForsendelseIdByEksternRef.js)
+See [retrieveForsendelseIdByEksternRef.js](examples/retrieveForsendelseIdByEksternRef.js)
 
 Not tested
 
 ### setForsendelseLestAvEksterntSystem
 
-See [setForsendelseLestAvEksterntSystem.js](example/setForsendelseLestAvEksterntSystem.js)
+See [setForsendelseLestAvEksterntSystem.js](examples/setForsendelseLestAvEksterntSystem.js)
 
 Not tested

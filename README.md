@@ -6,7 +6,7 @@
 
 Node module for SvarUt
 
-More information on SvarUt [here](https://kurs.kommit.no/mod/page/view.php?id=193)
+More information on SvarUt [here](https://github.com/ks-no/svarut-dokumentasjon/wiki)
 
 This module cover all methods in [ForsendelsesServiceV7](https://svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV7?wsdl)
 

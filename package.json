@@ -16,7 +16,7 @@
     }
   ],
   "main": "index.js",
-  "files" : [
+  "files": [
     "index.js",
     "lib/index.js"
   ],
@@ -47,7 +47,7 @@
   "dependencies": {
     "easyxml": "2.0.1",
     "ws.js-buffer-fix": "2.1.7",
-    "xml2js": "^0.4.19"
+    "xml2js-parser": "^1.1.1"
   },
   "devDependencies": {
     "ava": "0.22.0",

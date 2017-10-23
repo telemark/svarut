@@ -141,22 +141,6 @@ Returns
     {
       "hendelse": "Lest eksternt 18.10.2017 23:21:41 av 11111111111 hos avsender 0800_telemark_test i systemet 'arkiv'",
       "tidspunkt": "18.10.2017 23:21:18"
-    },
-    {
-      "hendelse": "Lest eksternt 18.10.2017 23:23:11 av 11111111111 hos avsender 0800_telemark_test i systemet 'arkiv'",
-      "tidspunkt": "18.10.2017 23:22:48"
-    },
-    {
-      "hendelse": "Lest eksternt 19.10.2017 00:27:14 av 11111111111 hos avsender 0800_telemark_test i systemet 'arkiv'",
-      "tidspunkt": "19.10.2017 00:26:50"
-    },
-    {
-      "hendelse": "Lest eksternt 19.10.2017 13:07:34 av 11111111111 hos avsender 0800_telemark_test i systemet 'arkiv'",
-      "tidspunkt": "19.10.2017 13:07:12"
-    },
-    {
-      "hendelse": "Lest eksternt 19.10.2017 13:08:50 av 11111111111 hos avsender 0800_telemark_test i systemet 'arkiv'",
-      "tidspunkt": "19.10.2017 13:08:27"
     }
   ]
 }

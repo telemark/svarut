@@ -36,20 +36,30 @@ $ npm i
 
 See [sendForsendelse.js](examples/sendForsendelse.js)
 
-Returns an array of ids
+Returns if (one):
 
 ```js
-['b53d8d15-75e8-4536-84d2-c275cc63f47e']
+"b53d8d15-75e8-4536-84d2-c275cc63f47e"
+```
+
+Return if multiple:
+```js
+["b53d8d15-75e8-4536-84d2-c275cc63f47e", "718e95b5-49dd-463b-8a5d-35aee3ee9850"]
 ```
 
 ### sendForsendelse (advanced)
 
 See [sendForsendelse.js](examples/sendForsendelse_advanced.js)
 
-Returns an array of ids
+Returns if (one):
 
 ```js
-['b53d8d15-75e8-4536-84d2-c275cc63f47e']
+"b53d8d15-75e8-4536-84d2-c275cc63f47e"
+```
+
+Return if multiple:
+```js
+["b53d8d15-75e8-4536-84d2-c275cc63f47e", "718e95b5-49dd-463b-8a5d-35aee3ee9850"]
 ```
 
 ### retrieveForsendelseStatus
@@ -59,17 +69,7 @@ See [retrieveForsendelseStatus.js](examples/retrieveForsendelseStatus.js)
 Returns
 
 ```js
-{
-  "forsendelseStatus": [
-    "SENDT_PRINT"
-  ],
-  "forsendelsesid": [
-    "718e95b5-49dd-463b-8a5d-35aee3ee9850"
-  ],
-  "sisteStatusEndring": [
-    "2017-10-18T15:43:45.978+02:00"
-  ]
-}
+"LEST"
 ```
 
 ### retrieveForsendelseStatuser
@@ -81,26 +81,14 @@ Returns
 ```js
 [
   {
-    "forsendelseStatus": [
-      "SENDT_PRINT"
-    ],
-    "forsendelsesid": [
-      "718e95b5-49dd-463b-8a5d-35aee3ee9850"
-    ],
-    "sisteStatusEndring": [
-      "2017-10-18T15:43:45.978+02:00"
-    ]
+    "forsendelseStatus": "LEST",
+    "forsendelsesid": "718e95b5-49dd-463b-8a5d-35aee3ee9850",
+    "sisteStatusEndring": "2017-10-18T23:21:18.398+02:00"
   },
   {
-    "forsendelseStatus": [
-      "SENDT_PRINT"
-    ],
-    "forsendelsesid": [
-      "63313040-7b07-442f-a891-df0b2edf41d9"
-    ],
-    "sisteStatusEndring": [
-      "2017-08-21T15:56:58.385+02:00"
-    ]
+    "forsendelseStatus": "SENDT_PRINT",
+    "forsendelsesid": "63313040-7b07-442f-a891-df0b2edf41d9",
+    "sisteStatusEndring": "2017-08-21T15:56:58.385+02:00"
   }
 ]
 ```
@@ -112,83 +100,66 @@ See [retrieveForsendelseHistorikk.js](examples/retrieveForsendelseHistorikk.js)
 Returns
 
 ```js
-  {
-    "hendelsesLogg": [
-      {
-        "hendelse": [
-          "Mottatt, og tildelt forsendelse-id"
-        ],
-        "tidspunkt": [
-          "18.10.2017 13:43:31"
-        ]
-      },
-      {
-        "hendelse": [
-          "Metadata er validert OK"
-        ],
-        "tidspunkt": [
-          "18.10.2017 13:43:31"
-        ]
-      },
-      {
-        "hendelse": [
-          "Orginaldokumenter er lagret (1 dokument)"
-        ],
-        "tidspunkt": [
-          "18.10.2017 13:43:31"
-        ]
-      },
-      {
-        "hendelse": [
-          "Forsendelsesfil generert"
-        ],
-        "tidspunkt": [
-          "18.10.2017 13:43:31"
-        ]
-      },
-      {
-        "hendelse": [
-          "Akseptert for ekspedering"
-        ],
-        "tidspunkt": [
-          "18.10.2017 13:43:31"
-        ]
-      },
-      {
-        "hendelse": [
-          "Mottaker 01029400470 er registert i kontaktregister, men har ikke registrert postkasse."
-        ],
-        "tidspunkt": [
-          "18.10.2017 13:43:31"
-        ]
-      },
-      {
-        "hendelse": [
-          "Varsling sendt til Altinn"
-        ],
-        "tidspunkt": [
-          "18.10.2017 13:43:31"
-        ]
-      },
-      {
-        "hendelse": [
-          "Lesefrist utløpt."
-        ],
-        "tidspunkt": [
-          "18.10.2017 15:43:45"
-        ]
-      },
-      {
-        "hendelse": [
-          "Sendt til manuell print"
-        ],
-        "tidspunkt": [
-          "18.10.2017 15:43:45"
-        ]
-      }
-    ]
-  }
-]
+{
+  "hendelsesLogg": [
+    {
+      "hendelse": "Mottatt, og tildelt forsendelse-id",
+      "tidspunkt": "18.10.2017 13:43:31"
+    },
+    {
+      "hendelse": "Metadata er validert OK",
+      "tidspunkt": "18.10.2017 13:43:31"
+    },
+    {
+      "hendelse": "Orginaldokumenter er lagret (1 dokument)",
+      "tidspunkt": "18.10.2017 13:43:31"
+    },
+    {
+      "hendelse": "Forsendelsesfil generert",
+      "tidspunkt": "18.10.2017 13:43:31"
+    },
+    {
+      "hendelse": "Akseptert for ekspedering",
+      "tidspunkt": "18.10.2017 13:43:31"
+    },
+    {
+      "hendelse": "Mottaker 01029400470 er registert i kontaktregister, men har ikke registrert postkasse.",
+      "tidspunkt": "18.10.2017 13:43:31"
+    },
+    {
+      "hendelse": "Varsling sent til Altinn. Forsendelsen vil ettersendes som brevpost dersom den ikke blir lest innen utløp av lesefristen. Lesefristen utløper etter 2 timer.",
+      "tidspunkt": "18.10.2017 13:43:31"
+    },
+    {
+      "hendelse": "Lesefrist utløpt.",
+      "tidspunkt": "18.10.2017 15:43:45"
+    },
+    {
+      "hendelse": "Sendt til manuell print",
+      "tidspunkt": "18.10.2017 15:43:45"
+    },
+    {
+      "hendelse": "Lest eksternt 18.10.2017 23:21:41 av 11111111111 hos avsender 0800_telemark_test i systemet 'arkiv'",
+      "tidspunkt": "18.10.2017 23:21:18"
+    },
+    {
+      "hendelse": "Lest eksternt 18.10.2017 23:23:11 av 11111111111 hos avsender 0800_telemark_test i systemet 'arkiv'",
+      "tidspunkt": "18.10.2017 23:22:48"
+    },
+    {
+      "hendelse": "Lest eksternt 19.10.2017 00:27:14 av 11111111111 hos avsender 0800_telemark_test i systemet 'arkiv'",
+      "tidspunkt": "19.10.2017 00:26:50"
+    },
+    {
+      "hendelse": "Lest eksternt 19.10.2017 13:07:34 av 11111111111 hos avsender 0800_telemark_test i systemet 'arkiv'",
+      "tidspunkt": "19.10.2017 13:07:12"
+    },
+    {
+      "hendelse": "Lest eksternt 19.10.2017 13:08:50 av 11111111111 hos avsender 0800_telemark_test i systemet 'arkiv'",
+      "tidspunkt": "19.10.2017 13:08:27"
+    }
+  ]
+}
 ```
 
 ### retrieveForsendelseIdByEksternRef

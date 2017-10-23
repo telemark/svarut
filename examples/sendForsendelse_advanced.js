@@ -13,81 +13,79 @@ const options = {
         mimetype: 'application/pdf'
       }
     ],
-    forsendelse: {
-      tittel: 'SvarUt testdokument',
-      avgivendeSystem: 'node-svarut test',
-      konteringskode: '1111',
-      krevNiva4Innlogging: false,
-      kryptert: false,
-      kunDigitalLevering: false,
-      printkonfigurasjon: {
-        brevtype: 'BPOST',
-        fargePrint: true,
-        tosidig: false
-      },
-      eksternref: 11,
-      forsendelseType: 'string',
-      lenker: [
+    tittel: 'SvarUt testdokument',
+    avgivendeSystem: 'node-svarut test',
+    konteringskode: '1111',
+    krevNiva4Innlogging: false,
+    kryptert: false,
+    kunDigitalLevering: false,
+    printkonfigurasjon: {
+      brevtype: 'BPOST',
+      fargePrint: true,
+      tosidig: false
+    },
+    eksternref: 11,
+    forsendelseType: 'string',
+    lenker: [
+      {
+        ledetekst: 'string',
+        urlLenke: 'string',
+        urlTekst: 'string'
+      }
+    ],
+    metadataForImport: {
+      dokumentetsDato: new Date().toISOString(),
+      journalposttype: 'string',
+      journalstatus: 'string',
+      saksaar: 11,
+      sakssekvensnummer: 11,
+      tittel: 'string'
+    },
+    metadataFraAvleverendeSystem: {
+      dokumentetsDato: new Date().toISOString(),
+      ekstraMetadata: [
         {
-          ledetekst: 'string',
-          urlLenke: 'string',
-          urlTekst: 'string'
+          key: 'string',
+          value: 'string'
         }
       ],
-      metadataForImport: {
-        dokumentetsDato: new Date().toISOString(),
-        journalposttype: 'string',
-        journalstatus: 'string',
-        saksaar: 11,
-        sakssekvensnummer: 11,
-        tittel: 'string'
-      },
-      metadataFraAvleverendeSystem: {
-        dokumentetsDato: new Date().toISOString(),
-        ekstraMetadata: [
-          {
-            key: 'string',
-            value: 'string'
-          }
-        ],
-        journalaar: 11,
-        journaldato: new Date().toISOString(),
-        journalpostnummer: 11,
-        journalposttype: 'string',
-        journalsekvensnummer: 11,
-        journalstatus: 'string',
-        saksaar: 111,
-        saksbehandler: 111,
-        sakssekvensnummer: 111,
-        tittel: 'string'
-      },
-      signaturtype: 'AUTENTISERT_SIGNATUR',
-      signeringUtloper: new Date().toISOString(),
-      svarPaForsendelse: 'http://google.no',
-      svarPaForsendelseLink: false,
-      svarSendesTil: {
-        navn: 'Terje Tverrtryne',
-        adresse1: 'Skogsveien 42',
-        adresse2: '',
-        adresse3: '',
-        postnr: '3710',
-        poststed: 'Skien',
-        fodselsnr: '01029400470'
-      }
+      journalaar: 11,
+      journaldato: new Date().toISOString(),
+      journalpostnummer: 11,
+      journalposttype: 'string',
+      journalsekvensnummer: 11,
+      journalstatus: 'string',
+      saksaar: 111,
+      saksbehandler: 111,
+      sakssekvensnummer: 111,
+      tittel: 'string'
     },
-    mottaker: [
-      {
-        navn: 'Terje Tverrtryne',
-        adresse1: 'Skogsveien 42',
-        adresse2: '',
-        adresse3: '',
-        postnr: '3710',
-        poststed: 'Skien',
-        fodselsnr: '01029400470'
-        // orgnr: '940192226' // Hvis organisasjon
-      }
-    ]
-  }
+    signaturtype: 'AUTENTISERT_SIGNATUR',
+    signeringUtloper: new Date().toISOString(),
+    svarPaForsendelse: 'http://google.no',
+    svarPaForsendelseLink: false,
+    svarSendesTil: {
+      navn: 'Terje Tverrtryne',
+      adresse1: 'Skogsveien 42',
+      adresse2: '',
+      adresse3: '',
+      postnr: '3710',
+      poststed: 'Skien',
+      fodselsnr: '01029400470'
+    }
+  },
+  mottaker: [
+    {
+      navn: 'Terje Tverrtryne',
+      adresse1: 'Skogsveien 42',
+      adresse2: '',
+      adresse3: '',
+      postnr: '3710',
+      poststed: 'Skien',
+      fodselsnr: '01029400470'
+      // orgnr: '940192226' // Hvis organisasjon
+    }
+  ]
 }
 
 svarUt.sendForsendelse(options)

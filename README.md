@@ -10,6 +10,8 @@ More information on SvarUt [here](https://github.com/ks-no/svarut-dokumentasjon/
 
 This module cover all methods in [ForsendelsesServiceV7](https://svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV7?wsdl)
 
+See the [wiki](https://github.com/telemark/node-svarut/wiki) for field descriptions.
+
 ## Installation
 From npm
 

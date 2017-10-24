@@ -32,7 +32,7 @@ exports.sendForsendelse = options => {
     let opts = Object.assign({}, options)
     opts.query.mottaker = setMottaker(mottaker)
     opts.query = { forsendelse: opts.query }
-    return await wsSend(opts)
+    return wsSend(opts)
   }
   const jobs = Array.isArray(options.query.mottaker) ? options.query.mottaker.map(createJobs) : [createJobs(options.query.mottaker)]
 

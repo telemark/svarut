@@ -36,28 +36,17 @@ $ npm i
 
 See [sendForsendelse.js](examples/sendForsendelse.js)
 
-Returns if (one):
-
+Returns
 ```js
-"b53d8d15-75e8-4536-84d2-c275cc63f47e"
-```
-
-Return if multiple:
-```js
-["b53d8d15-75e8-4536-84d2-c275cc63f47e", "718e95b5-49dd-463b-8a5d-35aee3ee9850"]
+["b53d8d15-75e8-4536-84d2-c275cc63f47e"]
 ```
 
 ### sendForsendelse (advanced)
 
 See [sendForsendelse.js](examples/sendForsendelse_advanced.js)
 
-Returns if (one):
+Returns
 
-```js
-"b53d8d15-75e8-4536-84d2-c275cc63f47e"
-```
-
-Return if multiple:
 ```js
 ["b53d8d15-75e8-4536-84d2-c275cc63f47e", "718e95b5-49dd-463b-8a5d-35aee3ee9850"]
 ```

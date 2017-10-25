@@ -1,6 +1,6 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Build Status](https://travis-ci.org/telemark/node-svarut.svg?branch=master)](https://travis-ci.org/telemark/node-svarut)
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/node-svarut.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/telemark/svarut.svg?branch=master)](https://travis-ci.org/telemark/svarut)
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/svarut.svg)](https://greenkeeper.io/)
 
 # node-svarut
 
@@ -10,7 +10,7 @@ More information on SvarUt [here](https://github.com/ks-no/svarut-dokumentasjon/
 
 This module cover all methods in [ForsendelsesServiceV7](https://svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV7?wsdl)
 
-See the [wiki](https://github.com/telemark/node-svarut/wiki) for field descriptions.
+See the [wiki](https://github.com/telemark/svarut/wiki) for field descriptions.
 
 ## Installation
 From npm

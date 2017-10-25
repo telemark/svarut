@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/telemark/svarut.svg?branch=master)](https://travis-ci.org/telemark/svarut)
 [![Greenkeeper badge](https://badges.greenkeeper.io/telemark/svarut.svg)](https://greenkeeper.io/)
 
-# node-svarut
+# svarut
 
 Node module for SvarUt
 

@@ -1,6 +1,6 @@
 {
-  "name": "node-svarut",
-  "version": "1.0.0",
+  "name": "svarut",
+  "version": "5.0.0",
   "description": "Sends documents to svarut",
   "license": "MIT",
   "author": {
@@ -38,12 +38,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/telemark/node-svarut.git"
+    "url": "https://github.com/telemark/svarut.git"
   },
   "bugs": {
-    "url": "https://github.com/telemark/node-svarut/issues"
+    "url": "https://github.com/telemark/svarut/issues"
   },
-  "homepage": "https://github.com/telemark/node-svarut",
+  "homepage": "https://github.com/telemark/svarut",
   "dependencies": {
     "easyxml": "2.0.1",
     "ws.js-buffer-fix": "2.1.7",

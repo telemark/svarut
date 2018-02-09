@@ -72,20 +72,20 @@ const options = {
       postnr: '3710',
       poststed: 'Skien',
       fodselsnr: '01029400470'
-    }
-  },
-  mottaker: [
-    {
-      navn: 'Terje Tverrtryne',
-      adresse1: 'Skogsveien 42',
-      adresse2: '',
-      adresse3: '',
-      postnr: '3710',
-      poststed: 'Skien',
-      fodselsnr: '01029400470'
-      // orgnr: '940192226' // Hvis organisasjon
-    }
-  ]
+    },
+    mottaker: [
+      {
+        navn: 'Terje Tverrtryne',
+        adresse1: 'Skogsveien 42',
+        adresse2: '',
+        adresse3: '',
+        postnr: '3710',
+        poststed: 'Skien',
+        fodselsnr: '01029400470'
+        // orgnr: '940192226' // Hvis organisasjon
+      }
+    ]
+  }
 }
 
 svarUt.sendForsendelse(options)

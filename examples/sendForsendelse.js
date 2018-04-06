@@ -32,7 +32,7 @@ const options = {
         adresse3: '',
         postnr: '3710',
         poststed: 'Skien',
-        fodselsnr: '01029400475'
+        fnr: '01029400475'
         // orgnr: '940192226' // Hvis organisasjon
       },
       {
@@ -42,7 +42,7 @@ const options = {
         adresse3: '',
         postnr: '3710',
         poststed: 'Skien',
-        fodselsnr: '01029400460'
+        fnr: '01029400460'
         // orgnr: '940192226' // Hvis organisasjon
       }
     ]

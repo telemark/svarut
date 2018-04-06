@@ -3,7 +3,7 @@ const fs = require('fs')
 
 const options = {
   config: {
-    url: process.env.SVARUT_URL || 'https://username:password@test.svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV7'
+    url: process.env.SVARUT_URL || 'https://username:password@test.svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV9'
   },
   query: {
     dokumenter: [
@@ -71,7 +71,7 @@ const options = {
       adresse3: '',
       postnr: '3710',
       poststed: 'Skien',
-      fodselsnr: '01029400470'
+      fnr: '01029400470'
     },
     mottaker: [
       {

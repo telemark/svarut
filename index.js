@@ -91,3 +91,33 @@ exports.setForsendelseLestAvEksterntSystem = options => {
   options.action = 'setForsendelseLestAvEksterntSystem'
   return wsSend(options)
 }
+
+exports.retrieveForsendelseTyper = options => {
+  options.action = 'retrieveForsendelseTyper'
+  return wsSend(options)
+}
+
+exports.retrieveSigneringshistorikkForFlereForsendelser = options => {
+  options.action = 'retrieveSigneringshistorikkForFlereForsendelser'
+  return wsSend(options)
+}
+
+exports.retrieveForsendelseIdByEksternRef = options => {
+  options.action = 'retrieveForsendelseIdByEksternRef'
+  return wsSend(options)
+}
+
+exports.retrieveSigneringshistorikkForFlereForsendelser = options => {
+  options.action = 'retrieveSigneringshistorikkForFlereForsendelser'
+  return wsSend(options)
+}
+
+exports.retrieveSigneringshistorikk = options => {
+  options.action = 'retrieveSigneringshistorikk'
+  return wsSend(options)
+}
+
+exports.startNyForsendelse = options => {
+  options.action = 'startNyForsendelse'
+  return wsSend(options)
+}

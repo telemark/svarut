@@ -8,7 +8,7 @@ Node module for SvarUt
 
 More information on SvarUt [here](https://github.com/ks-no/svarut-dokumentasjon/wiki)
 
-This module cover all methods in [ForsendelsesServiceV7](https://svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV7?wsdl)
+This module cover all methods in [ForsendelsesServiceV7](https://svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV9?wsdl)
 
 See the [wiki](https://github.com/telemark/svarut/wiki) for field descriptions.
 
@@ -146,3 +146,21 @@ Not tested
 See [setForsendelseLestAvEksterntSystem.js](examples/setForsendelseLestAvEksterntSystem.js)
 
 Not tested
+
+### retrieveMottakerSystemForOrgnr
+
+Not tested
+
+### retrieveSigneringshistorikkForFlereForsendelser
+
+Not tested
+
+### retrieveSigneringshistorikk
+
+Not tested
+
+### startNyForsendelse
+
+Not tested
+
+

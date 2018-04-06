@@ -3,7 +3,7 @@ const fs = require('fs')
 
 const options = {
   config: {
-    url: process.env.SVARUT_URL || 'https://username:password@test.svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV7'
+    url: process.env.SVARUT_URL || 'https://username:password@test.svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV9'
   },
   query: {
     dokumenter: [
@@ -26,7 +26,7 @@ const options = {
       tosidig: false
     },
     signaturtype: 'AUTENTISERT_SIGNATUR',
-    signeringUtloper: new Date(Date.now() + 1*24*60*60*1000).toISOString(),
+    signeringUtloper: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000).toISOString(),
     svarPaForsendelseLink: false,
     svarSendesTil: {
       orgnr: '940192226',

@@ -43,7 +43,17 @@ Returns
 
 ### sendForsendelse (advanced)
 
-See [sendForsendelse.js](examples/sendForsendelse_advanced.js)
+See [sendForsendelse_advanced.js](examples/sendForsendelse_advanced.js)
+
+Returns
+
+```js
+["b53d8d15-75e8-4536-84d2-c275cc63f47e", "718e95b5-49dd-463b-8a5d-35aee3ee9850"]
+```
+
+### sendForsendelse (singeringsjobb)
+
+See [sendForsendelseSignatur.js](examples/sendForsendelseSignatur.js)
 
 Returns
 

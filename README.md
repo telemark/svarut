@@ -8,7 +8,7 @@ Node module for SvarUt
 
 More information on SvarUt [here](https://github.com/ks-no/svarut-dokumentasjon/wiki)
 
-This module cover all methods in [ForsendelsesServiceV7](https://svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV9?wsdl)
+This module cover all methods in [ForsendelsesServiceV9](https://svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV9?wsdl)
 
 See the [wiki](https://github.com/telemark/svarut/wiki) for field descriptions.
 
@@ -16,12 +16,12 @@ See the [wiki](https://github.com/telemark/svarut/wiki) for field descriptions.
 From npm
 
 ```sh
-$ npm i node-svarut
+$ npm i svarut
 ```
 
 From GitHub
 ```sh
-$ git clone git@github.com:telemark/node-svarut.git
+$ git clone git@github.com:telemark/svarut.git
 ```
 
 cd into directory and run install

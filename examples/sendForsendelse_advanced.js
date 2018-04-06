@@ -81,7 +81,7 @@ const options = {
         adresse3: '',
         postnr: '3710',
         poststed: 'Skien',
-        fodselsnr: '01029400470'
+        fnr: '01029400470'
         // orgnr: '940192226' // Hvis organisasjon
       }
     ]

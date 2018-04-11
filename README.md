@@ -163,7 +163,28 @@ Not tested
 
 ### retrieveSigneringshistorikkForFlereForsendelser
 
-Not tested
+See [retrieveSigneringshistorikkForFlereForsendelser.js](examples/retrieveSigneringshistorikkForFlereForsendelser.js)
+
+```js
+{
+  "forsendelseid": [
+    "2422cb25-bef1-4cd8-962c-3109e799dde7",
+    "85272059-2d43-4c7d-b03a-0a68c5f1bb3e"
+  ],
+  "logg": [
+    {
+      "tidspunkt": "11.04.2018 10:08:25",
+      "type": "SigneringsoppdragRegistrert",
+      "hendelse": "Signeringsoppdrag av type AUTENTISERT_SIGNATUR registert og utløper 12.04.2018"
+    },
+    {
+      "tidspunkt": "11.04.2018 10:08:25",
+      "type": "SigneringsoppdragRegistrert",
+      "hendelse": "Signeringsoppdrag av type AUTENTISERT_SIGNATUR registert og utløper 12.04.2018"
+    }
+  ]
+}
+```
 
 ### retrieveSigneringshistorikk
 

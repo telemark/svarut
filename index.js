@@ -97,11 +97,6 @@ exports.retrieveForsendelseTyper = options => {
   return wsSend(options)
 }
 
-exports.retrieveSigneringshistorikkForFlereForsendelser = options => {
-  options.action = 'retrieveSigneringshistorikkForFlereForsendelser'
-  return wsSend(options)
-}
-
 exports.retrieveForsendelseIdByEksternRef = options => {
   options.action = 'retrieveForsendelseIdByEksternRef'
   return wsSend(options)

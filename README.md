@@ -167,7 +167,70 @@ Not tested
 
 ### retrieveSigneringshistorikk
 
-Not tested
+See [retrieveSigneringshistorikk.js](examples/retrieveSigneringshistorikk.js)
+
+#### Ikke startet signering
+
+```js
+{
+  "forsendelseid": "bd7d0e68-7934-41f4-8490-dea6c6179477",
+  "logg": {
+    "tidspunkt": "11.04.2018 09:48:20",
+    "type": "SigneringsoppdragRegistrert",
+    "hendelse": "Signeringsoppdrag av type AUTENTISERT_SIGNATUR registert og utløper 12.04.2018"
+  }
+}
+```
+
+#### Godtatt signering
+
+```js
+{
+  "forsendelseid": "bd7d0e68-7934-41f4-8490-dea6c6179477",
+  "logg": [
+    {
+      "tidspunkt": "11.04.2018 09:48:20",
+      "type": "SigneringsoppdragRegistrert",
+      "hendelse": "Signeringsoppdrag av type AUTENTISERT_SIGNATUR registert og utløper 12.04.2018"
+    },
+    {
+      "tidspunkt": "11.04.2018 09:57:28",
+      "type": "SigneringsoppdragStartet",
+      "hendelse": "Mottaker starter signeringsoppdraget."
+    },
+    {
+      "tidspunkt": "11.04.2018 09:58:18",
+      "type": "SigneringsoppdragFullfort",
+      "hendelse": "Mottaker har fullført signeringsoppdraget og svar er sendt tilbake til avsender. Referanse: e324e614-4998-453b-a7a0-fba5cfa20ed0"
+    }
+  ]
+}
+```
+
+#### Avvist signering
+
+```js
+{
+  "forsendelseid": "ae9c9013-55f4-4059-87a9-beb860add58d",
+  "logg": [
+    {
+      "tidspunkt": "11.04.2018 09:48:20",
+      "type": "SigneringsoppdragRegistrert",
+      "hendelse": "Signeringsoppdrag av type AUTENTISERT_SIGNATUR registert og utløper 12.04.2018"
+    },
+    {
+      "tidspunkt": "11.04.2018 10:01:05",
+      "type": "SigneringsoppdragStartet",
+      "hendelse": "Mottaker starter signeringsoppdraget."
+    },
+    {
+      "tidspunkt": "11.04.2018 10:01:23",
+      "type": "SigneringsoppdragAvvistAvMottaker",
+      "hendelse": "Mottaker har avvist signeringsoppdraget."
+    }
+  ]
+}
+```
 
 ### startNyForsendelse
 

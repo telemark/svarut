@@ -1,4 +1,4 @@
-const svarUt = require('../index')
+const svarUt = require('../src/index')
 const options = {
   config: {
     url: process.env.SVARUT_URL || 'https://username:password@test.svarut.ks.no/tjenester/forsendelseservice/ForsendelsesServiceV9'

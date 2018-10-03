@@ -1,7 +1,7 @@
 const EasyXml = require('easyxml')
 const ws = require('ws.js-buffer-fix')
 const Parser = require('xml2js-parser')
-const parser = new Parser({trim: true, explicitArray: false})
+const parser = new Parser({ trim: true, explicitArray: false })
 const serializer = new EasyXml({
   rootElement: 'soap:Envelope',
   indent: 0,
@@ -23,14 +23,14 @@ module.exports = async options => {
   }
 }
 
-function textInsideTag (tag, html) {
+const textInsideTag = (tag, html) => {
   const stripTag = new RegExp(`<${tag}>|</${tag}>`, 'g')
   const insideTag = new RegExp(`<${tag}>(.*?)</${tag}>`, 'g')
   const textInside = html.match(insideTag)
   return textInside ? textInside.join('').replace(stripTag, '') : ''
 }
 
-function checkError (error) {
+const checkError = error => {
   if (error.response && error.statusCode) {
     const tag = error.response.includes('title') ? 'title' : error.response.includes('faultstring') ? 'faultstring' : false
     return {
@@ -42,8 +42,8 @@ function checkError (error) {
   }
 }
 
-function createEnvelope (query, action) {
-  return {
+const createEnvelope = (query, action) => (
+  {
     '_xmlns:soap': 'http://schemas.xmlsoap.org/soap/envelope/',
     'soap:Body': {
       [`ns2:${action}`]: {
@@ -52,16 +52,16 @@ function createEnvelope (query, action) {
       }
     }
   }
-}
+)
 
-function jsToXml (obj) {
+const jsToXml = obj => {
   let xml = serializer.render(obj)
   xml = xml.replace(/\n/g, '')
   return xml
 }
 
-function sendRequest (xml, url, dokumenter) {
-  function addFiles (wsRequest, dokumenter) {
+const sendRequest = (xml, url, dokumenter) => {
+  const addFiles = (wsRequest, dokumenter) => {
     dokumenter.map((dokument, i) => {
       const xpath = `//data[${++i}]`
       ws.addAttachment(wsRequest, 'request', xpath, dokument.data, dokument.mimetype)
@@ -90,7 +90,7 @@ function sendRequest (xml, url, dokumenter) {
   })
 }
 
-async function xmlToJs (ctx) {
+const xmlToJs = ctx => {
   try {
     const xml = textInsideTag('return', ctx)
     if (!xml) {

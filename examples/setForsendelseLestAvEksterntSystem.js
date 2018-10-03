@@ -1,4 +1,4 @@
-const svarUt = require('../index')
+const svarUt = require('../src/index')
 
 const options = {
   config: {

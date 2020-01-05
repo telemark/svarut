@@ -14,7 +14,6 @@ module.exports = async options => {
   const dokumenter = options._dokumenter ? options._dokumenter : false
   const envelope = createEnvelope(query, action)
   const xml = jsToXml(envelope)
-  console.log(xml)
   try {
     const ctx = await sendRequest(xml, config.url, dokumenter)
     return xmlToJs(ctx)
@@ -101,10 +100,12 @@ const xmlToJs = ctx => {
         const result = obj.body
         return result
       } catch (error) {
+        console.error(error)
         throw error
       }
     }
   } catch (error) {
+    console.error(error)
     throw error
   }
 }
